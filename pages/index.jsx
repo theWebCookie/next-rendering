@@ -18,6 +18,7 @@ const HomePage = (props) => {
 };
 
 export const getStaticProps = async (context) => {
+
   console.log('regenerating');
   const filePath = path.join(process.cwd(), 'data', 'mock-backend.json');
   const jsonData = await fs.readFile(filePath);
